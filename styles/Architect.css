@@ -3,6 +3,14 @@
 
 /*  */
 
+.text-light-gray {
+    color: #424242;
+    /* text-align: center; */
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 * {
     font-family: 'work sans', sans-serif;
 }
@@ -56,14 +64,6 @@ nav li a {
     color: #131313;
 }
 
-.banner-description {
-    color: #424242;
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 16px;
-    font-weight: 400;
-}
-
 header img {
     width: 100%;
     margin: 40px 0px 0px 0px;
@@ -89,16 +89,6 @@ header img {
     nav ul{
         flex-direction: column;
     }    
-}
-/* for tablet or something */
-@media screen and (min-width:576px) and (max-width:992px) {
-    header{
-        flex-direction: column;
-        padding: 50px;
-    }
-    nav ul{
-        flex-direction: column;
-    }
 }
 
 /* main styles */
@@ -131,4 +121,36 @@ main{
 .text-features{
     color: #FF900E;
     font-weight: 700;
+}
+
+
+
+/* for mobile version */
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 0px;
+    }
+    nav,{
+        margin-left: 0px;
+        
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-container{
+        margin-left: 0px;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        flex-direction: column;
+        padding: 50px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+
 }
